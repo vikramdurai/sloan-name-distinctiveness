@@ -4,6 +4,9 @@ This release contains the frozen protocol, analysis code, aggregate locked
 results, paper-ready tables and figures, and integrity checks for a study of
 1,795 NBA Draft Combine player–year observations from 2000–2025.
 
+Vikram Durai is the sole author. The role of AI assistance is documented in
+[`docs/AI_USE_DISCLOSURE.md`](docs/AI_USE_DISCLOSURE.md).
+
 ## Main finding
 
 Adding public-name distinctiveness to a conventional Combine-measurement model
@@ -23,6 +26,18 @@ distinctiveness in draft evaluation.
   CSV tables, and PNG/SVG figures.
 - `requirements-analysis.txt`: exact numerical-library versions used.
 - `SHA256SUMS`: checksums for every release file except the checksum file itself.
+
+## License
+
+Original software and source code are licensed under the MIT License; see
+[`LICENSE-CODE`](LICENSE-CODE). Original documentation, prose, aggregate
+tables, and figures are licensed under the Creative Commons Attribution 4.0
+International License; see [`LICENSE-CONTENT.md`](LICENSE-CONTENT.md).
+
+Neither license applies to third-party data or materials. In particular, it
+does not grant rights in NBA, NBA.com, SSA, Census, Wikipedia, or other
+third-party content. See the license files and data-availability statement for
+the precise boundaries.
 
 ## Data sources and availability
 

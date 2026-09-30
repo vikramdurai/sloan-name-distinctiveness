@@ -19,16 +19,18 @@
 - [x] Official public data-source links and executable acquisition code
 - [x] Data-availability and redistribution-status statement
 - [x] Structured abstract under 500 words
+- [x] Public repository created and checked for release-safe contents
+- [x] MIT code license and CC BY 4.0 original-content license added
+- [x] Sole authorship and AI-assistance disclosure documented
 
 ## Author actions before submission
 
-- [ ] Add author names, affiliations, email addresses, and author order.
-- [ ] Obtain approval of the abstract and submission from every coauthor.
-- [ ] Put the `release/` contents in a public GitHub or equivalent repository.
-- [ ] Confirm every link works for a logged-out reader and record the public
+- [ ] Add Vikram Durai's affiliation and email address; confirm the form lists
+      Vikram Durai as the sole author.
+- [x] Publish the release repository at
+      https://github.com/vikramdurai/sloan-name-distinctiveness.
+- [ ] Confirm every link works for a logged-out reader and enter the public
       repository URL in the submission form.
-- [ ] Add a repository license for original code and prose. Do not apply that
-      license to third-party NBA data.
 - [ ] Choose the Basketball track.
 - [ ] Paste the title and four required abstract sections from
       `SSAC27_ABSTRACT.md`; confirm the form's word counter remains below 500.
@@ -37,6 +39,8 @@
       figure.
 - [ ] Complete conflict-of-interest, originality, rights, and author
       declarations accurately.
+- [ ] If the form asks about generative AI, disclose its use consistently with
+      `AI_USE_DISCLOSURE.md`; do not list Codex as an author.
 - [ ] State that NBA.com is the source of Combine, draft, and profile records.
 - [ ] Submit before October 1, 2026, 11:59 p.m. Eastern Time.
 - [ ] Save the submitted PDF/text, repository commit hash, timestamp, and

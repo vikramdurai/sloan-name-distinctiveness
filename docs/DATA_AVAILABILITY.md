@@ -37,7 +37,7 @@ This repository provides:
 The NBA source pages were publicly accessible when acquired, but public access
 does not by itself establish a right to mirror third-party files. Cached NBA
 responses and the derived player-level NBA cohort are therefore excluded while
-the authors seek written redistribution permission from the NBA. NBA.com is
+the author seeks written redistribution permission from the NBA. NBA.com is
 prominently credited as the source of all Combine measurements, draft outcomes,
 and player-profile fields.
 
