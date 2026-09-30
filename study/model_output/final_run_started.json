@@ -1,0 +1,17 @@
+{
+  "cohort_sha256": "c89fea37b806994ac521accfe1ebe5ebff6d5edd01b0c96edf9b0dbc66e9347f",
+  "created_at_utc": "2026-09-30T16:15:27.298740+00:00",
+  "implementation_sha256": {
+    "study/modeling.py": "7931543346517feb352cd509a85425f5628d9701433d28f5418ada6d7135c663",
+    "study/run_models.py": "77cc077478a78955587c1502fb2058682a2d3076767ffa4763f9e59d5a5ee109"
+  },
+  "software_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.2",
+    "python": "3.11.4",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.16.1"
+  },
+  "spec_sha256": "47901ebddcb8978d842748a94961410238cb0332689713737d491492d0cef9c1",
+  "status": "final_locked_test_started"
+}

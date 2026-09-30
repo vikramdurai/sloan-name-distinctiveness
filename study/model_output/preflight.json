@@ -1,0 +1,16 @@
+{
+  "audit_analysis_ready": true,
+  "cohort_sha256": "c89fea37b806994ac521accfe1ebe5ebff6d5edd01b0c96edf9b0dbc66e9347f",
+  "rows": 1795,
+  "spec_sha256": "47901ebddcb8978d842748a94961410238cb0332689713737d491492d0cef9c1",
+  "split_row_counts": {
+    "test": 326,
+    "train": 1204,
+    "validation": 265
+  },
+  "status": "passed",
+  "years": [
+    2000,
+    2025
+  ]
+}

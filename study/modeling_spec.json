@@ -1,0 +1,108 @@
+{
+  "frozen_on": "2026-09-30",
+  "status": "frozen_before_outcome_modeling",
+  "unit": "player_combine_year",
+  "outcome": "drafted",
+  "year_range": [2000, 2025],
+  "splits": {
+    "train": [2000, 2017],
+    "validation": [2018, 2021],
+    "test": [2022, 2025]
+  },
+  "name_features": [
+    "given_generation_surprisal",
+    "surname_conservative_surprisal_bits",
+    "initials",
+    "given_generation_ssa_ever_observed",
+    "surname_observed"
+  ],
+  "prediction_baseline_numeric": [
+    "combine_year",
+    "HEIGHT_WO_SHOES",
+    "HEIGHT_W_SHOES",
+    "WEIGHT",
+    "WINGSPAN",
+    "STANDING_REACH",
+    "BODY_FAT_PCT",
+    "HAND_LENGTH",
+    "HAND_WIDTH",
+    "STANDING_VERTICAL_LEAP",
+    "MAX_VERTICAL_LEAP",
+    "LANE_AGILITY_TIME",
+    "MODIFIED_LANE_AGILITY_TIME",
+    "THREE_QUARTER_SPRINT",
+    "BENCH_PRESS"
+  ],
+  "prediction_baseline_categorical": ["POSITION"],
+  "association_adjustment_numeric": [
+    "HEIGHT_WO_SHOES",
+    "WEIGHT",
+    "WINGSPAN",
+    "STANDING_REACH",
+    "MAX_VERTICAL_LEAP",
+    "LANE_AGILITY_TIME",
+    "THREE_QUARTER_SPRINT",
+    "BENCH_PRESS"
+  ],
+  "association_adjustment_categorical": ["combine_year", "POSITION"],
+  "models": {
+    "baseline": "prediction_baseline",
+    "name_only": "combine_year_plus_name_features",
+    "baseline_plus_name": "prediction_baseline_plus_name_features"
+  },
+  "preprocessing": {
+    "continuous_missing": "fitting_data_median_plus_missing_indicator",
+    "continuous_scaling": "fitting_data_standardization_after_imputation",
+    "position": "one_hot_missing_category_unknown_all_zero",
+    "zero_variance": "drop_and_report"
+  },
+  "estimator": "l2_logistic_regression",
+  "penalty_C_grid": [0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000],
+  "penalty_selection": "minimum_validation_log_loss_tie_smaller_C",
+  "primary_prediction_metric": "log_loss_difference_baseline_plus_name_minus_baseline",
+  "secondary_prediction_metrics": [
+    "brier_score",
+    "roc_auc",
+    "average_precision",
+    "calibration_intercept",
+    "calibration_slope"
+  ],
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20260930,
+    "scheme": "paired_player_identity_within_test_year",
+    "interval": "percentile_95"
+  },
+  "association": {
+    "estimator": "unpenalized_logistic",
+    "fallback": "firth_logistic_same_formula",
+    "standard_errors": "player_clustered_sandwich",
+    "alpha": 0.05,
+    "multiplicity": "holm_two_co_primary_tests",
+    "co_primary_exposures": [
+      "given_generation_surprisal",
+      "surname_conservative_surprisal_bits"
+    ]
+  },
+  "sensitivity_analyses": [
+    "exact_birth_year_given_surprisal_verified_subset",
+    "ssa_suppression_zero",
+    "ssa_suppression_midpoint_2_5",
+    "surname_unpublished_count_1",
+    "surname_unpublished_count_50",
+    "exclude_initial_forms",
+    "final_combine_appearance_only",
+    "exclude_2020"
+  ],
+  "excluded_primary_features": [
+    "age",
+    "nationality",
+    "pathway",
+    "production",
+    "recruiting_rank",
+    "mock_draft_rank",
+    "legal_or_birth_name",
+    "name_composite",
+    "orthographic_adjustment"
+  ]
+}

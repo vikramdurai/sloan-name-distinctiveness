@@ -1,0 +1,3995 @@
+{
+  "cohort_sha256": "c89fea37b806994ac521accfe1ebe5ebff6d5edd01b0c96edf9b0dbc66e9347f",
+  "created_at_utc": "2026-09-30T16:11:54.454320+00:00",
+  "implementation_sha256": {
+    "study/modeling.py": "7931543346517feb352cd509a85425f5628d9701433d28f5418ada6d7135c663",
+    "study/run_models.py": "77cc077478a78955587c1502fb2058682a2d3076767ffa4763f9e59d5a5ee109"
+  },
+  "models": {
+    "baseline": {
+      "candidates": [
+        {
+          "C": 0.0001,
+          "iterations": 7,
+          "validation_log_loss": 0.6612986476182225
+        },
+        {
+          "C": 0.001,
+          "iterations": 7,
+          "validation_log_loss": 0.6490961806085211
+        },
+        {
+          "C": 0.01,
+          "iterations": 14,
+          "validation_log_loss": 0.6774413715523475
+        },
+        {
+          "C": 0.1,
+          "iterations": 25,
+          "validation_log_loss": 0.6695318776463337
+        },
+        {
+          "C": 1.0,
+          "iterations": 60,
+          "validation_log_loss": 0.6600004676374318
+        },
+        {
+          "C": 10.0,
+          "iterations": 89,
+          "validation_log_loss": 0.6700186677898451
+        },
+        {
+          "C": 100.0,
+          "iterations": 150,
+          "validation_log_loss": 0.6764928892283996
+        },
+        {
+          "C": 1000.0,
+          "iterations": 204,
+          "validation_log_loss": 0.6838716780508116
+        },
+        {
+          "C": 10000.0,
+          "iterations": 160,
+          "validation_log_loss": 0.6819736759263405
+        }
+      ],
+      "preprocessing": {
+        "categorical_levels": {
+          "POSITION": [
+            "C",
+            "C-PF",
+            "PF",
+            "PF-C",
+            "PF-SF",
+            "PG",
+            "PG-SG",
+            "SF",
+            "SF-PF",
+            "SF-SG",
+            "SG",
+            "SG-PG",
+            "SG-SF",
+            "__MISSING__"
+          ]
+        },
+        "missing_indicators": [
+          "HEIGHT_WO_SHOES",
+          "HEIGHT_W_SHOES",
+          "WEIGHT",
+          "WINGSPAN",
+          "STANDING_REACH",
+          "BODY_FAT_PCT",
+          "HAND_LENGTH",
+          "HAND_WIDTH",
+          "STANDING_VERTICAL_LEAP",
+          "MAX_VERTICAL_LEAP",
+          "LANE_AGILITY_TIME",
+          "MODIFIED_LANE_AGILITY_TIME",
+          "THREE_QUARTER_SPRINT",
+          "BENCH_PRESS"
+        ],
+        "numeric_coercion_failures": {
+          "BENCH_PRESS": 0,
+          "BODY_FAT_PCT": 0,
+          "HAND_LENGTH": 0,
+          "HAND_WIDTH": 0,
+          "HEIGHT_WO_SHOES": 0,
+          "HEIGHT_W_SHOES": 0,
+          "LANE_AGILITY_TIME": 0,
+          "MAX_VERTICAL_LEAP": 0,
+          "MODIFIED_LANE_AGILITY_TIME": 0,
+          "STANDING_REACH": 0,
+          "STANDING_VERTICAL_LEAP": 0,
+          "THREE_QUARTER_SPRINT": 0,
+          "WEIGHT": 0,
+          "WINGSPAN": 0,
+          "combine_year": 0
+        },
+        "numeric_means": {
+          "BENCH_PRESS": 10.652823920265782,
+          "BODY_FAT_PCT": 7.628820598006645,
+          "HAND_LENGTH": 8.741279069767442,
+          "HAND_WIDTH": 9.468853820598007,
+          "HEIGHT_WO_SHOES": 77.63035714285714,
+          "HEIGHT_W_SHOES": 78.86295681063123,
+          "LANE_AGILITY_TIME": 11.451569767441859,
+          "MAX_VERTICAL_LEAP": 34.1328903654485,
+          "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+          "STANDING_REACH": 103.48475913621262,
+          "STANDING_VERTICAL_LEAP": 29.11690199335548,
+          "THREE_QUARTER_SPRINT": 3.288662790697674,
+          "WEIGHT": 216.76885382059803,
+          "WINGSPAN": 82.39750830564785,
+          "combine_year": 2007.9111295681064
+        },
+        "numeric_medians": {
+          "BENCH_PRESS": 11.0,
+          "BODY_FAT_PCT": 7.0,
+          "HAND_LENGTH": 8.75,
+          "HAND_WIDTH": 9.5,
+          "HEIGHT_WO_SHOES": 78.0,
+          "HEIGHT_W_SHOES": 79.0,
+          "LANE_AGILITY_TIME": 11.395,
+          "MAX_VERTICAL_LEAP": 34.0,
+          "MODIFIED_LANE_AGILITY_TIME": 3.06,
+          "STANDING_REACH": 104.0,
+          "STANDING_VERTICAL_LEAP": 29.0,
+          "THREE_QUARTER_SPRINT": 3.27,
+          "WEIGHT": 216.0,
+          "WINGSPAN": 82.75,
+          "combine_year": 2007.0
+        },
+        "numeric_scales": {
+          "BENCH_PRESS": 5.026250063406409,
+          "BODY_FAT_PCT": 2.715790684295207,
+          "HAND_LENGTH": 0.29093221435465133,
+          "HAND_WIDTH": 0.45209186938696616,
+          "HEIGHT_WO_SHOES": 3.432638794239511,
+          "HEIGHT_W_SHOES": 2.8889521881891684,
+          "LANE_AGILITY_TIME": 0.5799490777992024,
+          "MAX_VERTICAL_LEAP": 3.5052449478069923,
+          "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+          "STANDING_REACH": 4.958012059269157,
+          "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+          "THREE_QUARTER_SPRINT": 0.12684763106118013,
+          "WEIGHT": 26.777328729771003,
+          "WINGSPAN": 4.079439831598452,
+          "combine_year": 5.171276636028576
+        },
+        "output_feature_count": 43,
+        "zero_variance_dropped": []
+      },
+      "selected_C": 0.001,
+      "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+    },
+    "baseline_plus_name": {
+      "candidates": [
+        {
+          "C": 0.0001,
+          "iterations": 7,
+          "validation_log_loss": 0.6611131485936446
+        },
+        {
+          "C": 0.001,
+          "iterations": 7,
+          "validation_log_loss": 0.6471917255694344
+        },
+        {
+          "C": 0.01,
+          "iterations": 14,
+          "validation_log_loss": 0.6691924620419054
+        },
+        {
+          "C": 0.1,
+          "iterations": 27,
+          "validation_log_loss": 0.6585303177788242
+        },
+        {
+          "C": 1.0,
+          "iterations": 59,
+          "validation_log_loss": 0.6492544509033176
+        },
+        {
+          "C": 10.0,
+          "iterations": 93,
+          "validation_log_loss": 0.6596456560244011
+        },
+        {
+          "C": 100.0,
+          "iterations": 140,
+          "validation_log_loss": 0.6659735677649739
+        },
+        {
+          "C": 1000.0,
+          "iterations": 183,
+          "validation_log_loss": 0.6725524745054
+        },
+        {
+          "C": 10000.0,
+          "iterations": 165,
+          "validation_log_loss": 0.6761914745359411
+        }
+      ],
+      "preprocessing": {
+        "categorical_levels": {
+          "POSITION": [
+            "C",
+            "C-PF",
+            "PF",
+            "PF-C",
+            "PF-SF",
+            "PG",
+            "PG-SG",
+            "SF",
+            "SF-PF",
+            "SF-SG",
+            "SG",
+            "SG-PG",
+            "SG-SF",
+            "__MISSING__"
+          ]
+        },
+        "missing_indicators": [
+          "HEIGHT_WO_SHOES",
+          "HEIGHT_W_SHOES",
+          "WEIGHT",
+          "WINGSPAN",
+          "STANDING_REACH",
+          "BODY_FAT_PCT",
+          "HAND_LENGTH",
+          "HAND_WIDTH",
+          "STANDING_VERTICAL_LEAP",
+          "MAX_VERTICAL_LEAP",
+          "LANE_AGILITY_TIME",
+          "MODIFIED_LANE_AGILITY_TIME",
+          "THREE_QUARTER_SPRINT",
+          "BENCH_PRESS",
+          "given_generation_surprisal",
+          "surname_conservative_surprisal_bits",
+          "given_generation_ssa_ever_observed",
+          "surname_observed"
+        ],
+        "numeric_coercion_failures": {
+          "BENCH_PRESS": 0,
+          "BODY_FAT_PCT": 0,
+          "HAND_LENGTH": 0,
+          "HAND_WIDTH": 0,
+          "HEIGHT_WO_SHOES": 0,
+          "HEIGHT_W_SHOES": 0,
+          "LANE_AGILITY_TIME": 0,
+          "MAX_VERTICAL_LEAP": 0,
+          "MODIFIED_LANE_AGILITY_TIME": 0,
+          "STANDING_REACH": 0,
+          "STANDING_VERTICAL_LEAP": 0,
+          "THREE_QUARTER_SPRINT": 0,
+          "WEIGHT": 0,
+          "WINGSPAN": 0,
+          "combine_year": 0,
+          "given_generation_ssa_ever_observed": 0,
+          "given_generation_surprisal": 0,
+          "initials": 0,
+          "surname_conservative_surprisal_bits": 0,
+          "surname_observed": 0
+        },
+        "numeric_means": {
+          "BENCH_PRESS": 10.652823920265782,
+          "BODY_FAT_PCT": 7.628820598006645,
+          "HAND_LENGTH": 8.741279069767442,
+          "HAND_WIDTH": 9.468853820598007,
+          "HEIGHT_WO_SHOES": 77.63035714285714,
+          "HEIGHT_W_SHOES": 78.86295681063123,
+          "LANE_AGILITY_TIME": 11.451569767441859,
+          "MAX_VERTICAL_LEAP": 34.1328903654485,
+          "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+          "STANDING_REACH": 103.48475913621262,
+          "STANDING_VERTICAL_LEAP": 29.11690199335548,
+          "THREE_QUARTER_SPRINT": 3.288662790697674,
+          "WEIGHT": 216.76885382059803,
+          "WINGSPAN": 82.39750830564785,
+          "combine_year": 2007.9111295681064,
+          "given_generation_ssa_ever_observed": 0.8928571428571429,
+          "given_generation_surprisal": 11.98627250233267,
+          "initials": 0.015780730897009966,
+          "surname_conservative_surprisal_bits": 13.773114468449512,
+          "surname_observed": 0.8953488372093024
+        },
+        "numeric_medians": {
+          "BENCH_PRESS": 11.0,
+          "BODY_FAT_PCT": 7.0,
+          "HAND_LENGTH": 8.75,
+          "HAND_WIDTH": 9.5,
+          "HEIGHT_WO_SHOES": 78.0,
+          "HEIGHT_W_SHOES": 79.0,
+          "LANE_AGILITY_TIME": 11.395,
+          "MAX_VERTICAL_LEAP": 34.0,
+          "MODIFIED_LANE_AGILITY_TIME": 3.06,
+          "STANDING_REACH": 104.0,
+          "STANDING_VERTICAL_LEAP": 29.0,
+          "THREE_QUARTER_SPRINT": 3.27,
+          "WEIGHT": 216.0,
+          "WINGSPAN": 82.75,
+          "combine_year": 2007.0,
+          "given_generation_ssa_ever_observed": 1.0,
+          "given_generation_surprisal": 11.443206960769173,
+          "initials": 0.0,
+          "surname_conservative_surprisal_bits": 12.903509164396098,
+          "surname_observed": 1.0
+        },
+        "numeric_scales": {
+          "BENCH_PRESS": 5.026250063406409,
+          "BODY_FAT_PCT": 2.715790684295207,
+          "HAND_LENGTH": 0.29093221435465133,
+          "HAND_WIDTH": 0.45209186938696616,
+          "HEIGHT_WO_SHOES": 3.432638794239511,
+          "HEIGHT_W_SHOES": 2.8889521881891684,
+          "LANE_AGILITY_TIME": 0.5799490777992024,
+          "MAX_VERTICAL_LEAP": 3.5052449478069923,
+          "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+          "STANDING_REACH": 4.958012059269157,
+          "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+          "THREE_QUARTER_SPRINT": 0.12684763106118013,
+          "WEIGHT": 26.777328729771003,
+          "WINGSPAN": 4.079439831598452,
+          "combine_year": 5.171276636028576,
+          "given_generation_ssa_ever_observed": 0.30929478706587094,
+          "given_generation_surprisal": 4.070735889879047,
+          "initials": 0.12462623892810906,
+          "surname_conservative_surprisal_bits": 4.274227409132955,
+          "surname_observed": 0.30610340886251586
+        },
+        "output_feature_count": 52,
+        "zero_variance_dropped": []
+      },
+      "selected_C": 0.001,
+      "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+    },
+    "name_only": {
+      "candidates": [
+        {
+          "C": 0.0001,
+          "iterations": 7,
+          "validation_log_loss": 0.6646168224674914
+        },
+        {
+          "C": 0.001,
+          "iterations": 6,
+          "validation_log_loss": 0.6572509852491472
+        },
+        {
+          "C": 0.01,
+          "iterations": 6,
+          "validation_log_loss": 0.6908737813290363
+        },
+        {
+          "C": 0.1,
+          "iterations": 11,
+          "validation_log_loss": 0.730352519705036
+        },
+        {
+          "C": 1.0,
+          "iterations": 14,
+          "validation_log_loss": 0.7372048364294981
+        },
+        {
+          "C": 10.0,
+          "iterations": 16,
+          "validation_log_loss": 0.738123417039114
+        },
+        {
+          "C": 100.0,
+          "iterations": 18,
+          "validation_log_loss": 0.7382860116741454
+        },
+        {
+          "C": 1000.0,
+          "iterations": 21,
+          "validation_log_loss": 0.7383159995826011
+        },
+        {
+          "C": 10000.0,
+          "iterations": 21,
+          "validation_log_loss": 0.7383681511226656
+        }
+      ],
+      "preprocessing": {
+        "categorical_levels": {},
+        "missing_indicators": [
+          "given_generation_surprisal",
+          "surname_conservative_surprisal_bits",
+          "given_generation_ssa_ever_observed",
+          "surname_observed"
+        ],
+        "numeric_coercion_failures": {
+          "combine_year": 0,
+          "given_generation_ssa_ever_observed": 0,
+          "given_generation_surprisal": 0,
+          "initials": 0,
+          "surname_conservative_surprisal_bits": 0,
+          "surname_observed": 0
+        },
+        "numeric_means": {
+          "combine_year": 2007.9111295681064,
+          "given_generation_ssa_ever_observed": 0.8928571428571429,
+          "given_generation_surprisal": 11.98627250233267,
+          "initials": 0.015780730897009966,
+          "surname_conservative_surprisal_bits": 13.773114468449512,
+          "surname_observed": 0.8953488372093024
+        },
+        "numeric_medians": {
+          "combine_year": 2007.0,
+          "given_generation_ssa_ever_observed": 1.0,
+          "given_generation_surprisal": 11.443206960769173,
+          "initials": 0.0,
+          "surname_conservative_surprisal_bits": 12.903509164396098,
+          "surname_observed": 1.0
+        },
+        "numeric_scales": {
+          "combine_year": 5.171276636028576,
+          "given_generation_ssa_ever_observed": 0.30929478706587094,
+          "given_generation_surprisal": 4.070735889879047,
+          "initials": 0.12462623892810906,
+          "surname_conservative_surprisal_bits": 4.274227409132955,
+          "surname_observed": 0.30610340886251586
+        },
+        "output_feature_count": 10,
+        "zero_variance_dropped": []
+      },
+      "selected_C": 0.001,
+      "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+    }
+  },
+  "sensitivity_models": {
+    "exact_birth_year_given_surprisal_verified_subset": {
+      "detail": {
+        "population": "verified_birth_year"
+      },
+      "models": {
+        "baseline": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 10,
+              "validation_log_loss": 0.7028070761313047
+            },
+            {
+              "C": 0.001,
+              "iterations": 6,
+              "validation_log_loss": 0.7041245512015879
+            },
+            {
+              "C": 0.01,
+              "iterations": 10,
+              "validation_log_loss": 0.7061348334313409
+            },
+            {
+              "C": 0.1,
+              "iterations": 21,
+              "validation_log_loss": 0.6818234463330148
+            },
+            {
+              "C": 1.0,
+              "iterations": 44,
+              "validation_log_loss": 0.6623683618150841
+            },
+            {
+              "C": 10.0,
+              "iterations": 79,
+              "validation_log_loss": 0.666171686580029
+            },
+            {
+              "C": 100.0,
+              "iterations": 87,
+              "validation_log_loss": 0.6933397467527272
+            },
+            {
+              "C": 1000.0,
+              "iterations": 99,
+              "validation_log_loss": 0.715486106726912
+            },
+            {
+              "C": 10000.0,
+              "iterations": 98,
+              "validation_log_loss": 0.7073609353750733
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.593350383631714,
+              "BODY_FAT_PCT": 7.230115089514068,
+              "HAND_LENGTH": 8.743286445012787,
+              "HAND_WIDTH": 9.455242966751918,
+              "HEIGHT_WO_SHOES": 77.57666240409206,
+              "HEIGHT_W_SHOES": 78.82161125319693,
+              "LANE_AGILITY_TIME": 11.35950127877238,
+              "MAX_VERTICAL_LEAP": 34.821611253196934,
+              "MODIFIED_LANE_AGILITY_TIME": 3.070920716112532,
+              "STANDING_REACH": 103.41592071611254,
+              "STANDING_VERTICAL_LEAP": 29.607736572890026,
+              "THREE_QUARTER_SPRINT": 3.2781202046035807,
+              "WEIGHT": 215.5447570332481,
+              "WINGSPAN": 82.45601023017903,
+              "combine_year": 2009.1048593350383
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 6.7,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 77.75,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.3,
+              "MAX_VERTICAL_LEAP": 35.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.07,
+              "STANDING_REACH": 103.75,
+              "STANDING_VERTICAL_LEAP": 29.5,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 215.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2009.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 4.734469215165949,
+              "BODY_FAT_PCT": 2.5183072120724046,
+              "HAND_LENGTH": 0.3243668903974068,
+              "HAND_WIDTH": 0.5011923173005765,
+              "HEIGHT_WO_SHOES": 3.384060083039277,
+              "HEIGHT_W_SHOES": 2.99407765170274,
+              "LANE_AGILITY_TIME": 0.5417744662209582,
+              "MAX_VERTICAL_LEAP": 3.4302261022129477,
+              "MODIFIED_LANE_AGILITY_TIME": 0.08973773298751102,
+              "STANDING_REACH": 4.936866024834657,
+              "STANDING_VERTICAL_LEAP": 2.8964405560619624,
+              "THREE_QUARTER_SPRINT": 0.12192266584189315,
+              "WEIGHT": 25.904513167295256,
+              "WINGSPAN": 3.9945650019598578,
+              "combine_year": 5.174376364380979
+            },
+            "output_feature_count": 43,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 1.0,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "baseline_plus_name": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 10,
+              "validation_log_loss": 0.7029012071685031
+            },
+            {
+              "C": 0.001,
+              "iterations": 8,
+              "validation_log_loss": 0.7048819525174685
+            },
+            {
+              "C": 0.01,
+              "iterations": 10,
+              "validation_log_loss": 0.7075668877569813
+            },
+            {
+              "C": 0.1,
+              "iterations": 22,
+              "validation_log_loss": 0.6826653544562796
+            },
+            {
+              "C": 1.0,
+              "iterations": 49,
+              "validation_log_loss": 0.6637564840424
+            },
+            {
+              "C": 10.0,
+              "iterations": 87,
+              "validation_log_loss": 0.6679963351889855
+            },
+            {
+              "C": 100.0,
+              "iterations": 94,
+              "validation_log_loss": 0.6921272977389012
+            },
+            {
+              "C": 1000.0,
+              "iterations": 131,
+              "validation_log_loss": 0.7118615870102849
+            },
+            {
+              "C": 10000.0,
+              "iterations": 129,
+              "validation_log_loss": 0.716488980338583
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS",
+              "given_exact_birth_surprisal",
+              "surname_conservative_surprisal_bits",
+              "given_exact_birth_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0,
+              "given_exact_birth_ssa_ever_observed": 0,
+              "given_exact_birth_surprisal": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.593350383631714,
+              "BODY_FAT_PCT": 7.230115089514068,
+              "HAND_LENGTH": 8.743286445012787,
+              "HAND_WIDTH": 9.455242966751918,
+              "HEIGHT_WO_SHOES": 77.57666240409206,
+              "HEIGHT_W_SHOES": 78.82161125319693,
+              "LANE_AGILITY_TIME": 11.35950127877238,
+              "MAX_VERTICAL_LEAP": 34.821611253196934,
+              "MODIFIED_LANE_AGILITY_TIME": 3.070920716112532,
+              "STANDING_REACH": 103.41592071611254,
+              "STANDING_VERTICAL_LEAP": 29.607736572890026,
+              "THREE_QUARTER_SPRINT": 3.2781202046035807,
+              "WEIGHT": 215.5447570332481,
+              "WINGSPAN": 82.45601023017903,
+              "combine_year": 2009.1048593350383,
+              "given_exact_birth_ssa_ever_observed": 0.9053708439897699,
+              "given_exact_birth_surprisal": 11.968611823634326,
+              "initials": 0.017902813299232736,
+              "surname_conservative_surprisal_bits": 13.402441115269228,
+              "surname_observed": 0.9028132992327366
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 6.7,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 77.75,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.3,
+              "MAX_VERTICAL_LEAP": 35.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.07,
+              "STANDING_REACH": 103.75,
+              "STANDING_VERTICAL_LEAP": 29.5,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 215.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2009.0,
+              "given_exact_birth_ssa_ever_observed": 1.0,
+              "given_exact_birth_surprisal": 11.437222054323971,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.584905054279597,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 4.734469215165949,
+              "BODY_FAT_PCT": 2.5183072120724046,
+              "HAND_LENGTH": 0.3243668903974068,
+              "HAND_WIDTH": 0.5011923173005765,
+              "HEIGHT_WO_SHOES": 3.384060083039277,
+              "HEIGHT_W_SHOES": 2.99407765170274,
+              "LANE_AGILITY_TIME": 0.5417744662209582,
+              "MAX_VERTICAL_LEAP": 3.4302261022129477,
+              "MODIFIED_LANE_AGILITY_TIME": 0.08973773298751102,
+              "STANDING_REACH": 4.936866024834657,
+              "STANDING_VERTICAL_LEAP": 2.8964405560619624,
+              "THREE_QUARTER_SPRINT": 0.12192266584189315,
+              "WEIGHT": 25.904513167295256,
+              "WINGSPAN": 3.9945650019598578,
+              "combine_year": 5.174376364380979,
+              "given_exact_birth_ssa_ever_observed": 0.29270203081465235,
+              "given_exact_birth_surprisal": 3.98764120604024,
+              "initials": 0.1325982751592401,
+              "surname_conservative_surprisal_bits": 4.173900986079035,
+              "surname_observed": 0.29621182616708236
+            },
+            "output_feature_count": 52,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 1.0,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "name_only": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.7031223461470121
+            },
+            {
+              "C": 0.001,
+              "iterations": 6,
+              "validation_log_loss": 0.7064340790686015
+            },
+            {
+              "C": 0.01,
+              "iterations": 7,
+              "validation_log_loss": 0.7213595471823246
+            },
+            {
+              "C": 0.1,
+              "iterations": 10,
+              "validation_log_loss": 0.7351181848726503
+            },
+            {
+              "C": 1.0,
+              "iterations": 13,
+              "validation_log_loss": 0.7380459054418761
+            },
+            {
+              "C": 10.0,
+              "iterations": 14,
+              "validation_log_loss": 0.7384847844947391
+            },
+            {
+              "C": 100.0,
+              "iterations": 15,
+              "validation_log_loss": 0.7387066678275047
+            },
+            {
+              "C": 1000.0,
+              "iterations": 19,
+              "validation_log_loss": 0.7385294434255169
+            },
+            {
+              "C": 10000.0,
+              "iterations": 22,
+              "validation_log_loss": 0.7386121772227289
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {},
+            "missing_indicators": [
+              "given_exact_birth_surprisal",
+              "surname_conservative_surprisal_bits",
+              "given_exact_birth_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "combine_year": 0,
+              "given_exact_birth_ssa_ever_observed": 0,
+              "given_exact_birth_surprisal": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "combine_year": 2009.1048593350383,
+              "given_exact_birth_ssa_ever_observed": 0.9053708439897699,
+              "given_exact_birth_surprisal": 11.968611823634326,
+              "initials": 0.017902813299232736,
+              "surname_conservative_surprisal_bits": 13.402441115269228,
+              "surname_observed": 0.9028132992327366
+            },
+            "numeric_medians": {
+              "combine_year": 2009.0,
+              "given_exact_birth_ssa_ever_observed": 1.0,
+              "given_exact_birth_surprisal": 11.437222054323971,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.584905054279597,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "combine_year": 5.174376364380979,
+              "given_exact_birth_ssa_ever_observed": 0.29270203081465235,
+              "given_exact_birth_surprisal": 3.98764120604024,
+              "initials": 0.1325982751592401,
+              "surname_conservative_surprisal_bits": 4.173900986079035,
+              "surname_observed": 0.29621182616708236
+            },
+            "output_feature_count": 10,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.0001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        }
+      },
+      "split_row_counts": {
+        "test": 306,
+        "train": 782,
+        "validation": 249
+      }
+    },
+    "exclude_2020": {
+      "detail": {},
+      "models": {
+        "baseline": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6593196948699579
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6453154590925166
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6704919262841331
+            },
+            {
+              "C": 0.1,
+              "iterations": 25,
+              "validation_log_loss": 0.6674807901497309
+            },
+            {
+              "C": 1.0,
+              "iterations": 60,
+              "validation_log_loss": 0.6583081243626308
+            },
+            {
+              "C": 10.0,
+              "iterations": 89,
+              "validation_log_loss": 0.6677212343044667
+            },
+            {
+              "C": 100.0,
+              "iterations": 150,
+              "validation_log_loss": 0.6752275129190823
+            },
+            {
+              "C": 1000.0,
+              "iterations": 204,
+              "validation_log_loss": 0.6838123239068697
+            },
+            {
+              "C": 10000.0,
+              "iterations": 160,
+              "validation_log_loss": 0.6816563681899251
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576
+            },
+            "output_feature_count": 43,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "baseline_plus_name": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6590037869817948
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6425597710158512
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6593100599134245
+            },
+            {
+              "C": 0.1,
+              "iterations": 27,
+              "validation_log_loss": 0.6523308565881064
+            },
+            {
+              "C": 1.0,
+              "iterations": 59,
+              "validation_log_loss": 0.6437343827969328
+            },
+            {
+              "C": 10.0,
+              "iterations": 93,
+              "validation_log_loss": 0.6536387960182007
+            },
+            {
+              "C": 100.0,
+              "iterations": 140,
+              "validation_log_loss": 0.6608328368090443
+            },
+            {
+              "C": 1000.0,
+              "iterations": 183,
+              "validation_log_loss": 0.6687231317574721
+            },
+            {
+              "C": 10000.0,
+              "iterations": 165,
+              "validation_log_loss": 0.6734137608101809
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS",
+              "given_generation_surprisal",
+              "surname_conservative_surprisal_bits",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "given_generation_surprisal": 11.98627250233267,
+              "initials": 0.015780730897009966,
+              "surname_conservative_surprisal_bits": 13.773114468449512,
+              "surname_observed": 0.8953488372093024
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.443206960769173,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.903509164396098,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "given_generation_surprisal": 4.070735889879047,
+              "initials": 0.12462623892810906,
+              "surname_conservative_surprisal_bits": 4.274227409132955,
+              "surname_observed": 0.30610340886251586
+            },
+            "output_feature_count": 52,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "name_only": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6625817939827884
+            },
+            {
+              "C": 0.001,
+              "iterations": 6,
+              "validation_log_loss": 0.6529962310874626
+            },
+            {
+              "C": 0.01,
+              "iterations": 6,
+              "validation_log_loss": 0.6803947326834603
+            },
+            {
+              "C": 0.1,
+              "iterations": 11,
+              "validation_log_loss": 0.7167734615037212
+            },
+            {
+              "C": 1.0,
+              "iterations": 14,
+              "validation_log_loss": 0.7231640601706577
+            },
+            {
+              "C": 10.0,
+              "iterations": 16,
+              "validation_log_loss": 0.7240217150731949
+            },
+            {
+              "C": 100.0,
+              "iterations": 18,
+              "validation_log_loss": 0.7241607563594146
+            },
+            {
+              "C": 1000.0,
+              "iterations": 21,
+              "validation_log_loss": 0.7242011430144143
+            },
+            {
+              "C": 10000.0,
+              "iterations": 21,
+              "validation_log_loss": 0.724252662899586
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {},
+            "missing_indicators": [
+              "given_generation_surprisal",
+              "surname_conservative_surprisal_bits",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "combine_year": 2007.9111295681064,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "given_generation_surprisal": 11.98627250233267,
+              "initials": 0.015780730897009966,
+              "surname_conservative_surprisal_bits": 13.773114468449512,
+              "surname_observed": 0.8953488372093024
+            },
+            "numeric_medians": {
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.443206960769173,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.903509164396098,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "combine_year": 5.171276636028576,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "given_generation_surprisal": 4.070735889879047,
+              "initials": 0.12462623892810906,
+              "surname_conservative_surprisal_bits": 4.274227409132955,
+              "surname_observed": 0.30610340886251586
+            },
+            "output_feature_count": 10,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        }
+      },
+      "split_row_counts": {
+        "test": 326,
+        "train": 1204,
+        "validation": 220
+      }
+    },
+    "exclude_initial_forms": {
+      "detail": {},
+      "models": {
+        "baseline": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 6,
+              "validation_log_loss": 0.6623840143348134
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6497101559335401
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6777295344554712
+            },
+            {
+              "C": 0.1,
+              "iterations": 28,
+              "validation_log_loss": 0.6697362081718594
+            },
+            {
+              "C": 1.0,
+              "iterations": 62,
+              "validation_log_loss": 0.6590470227533383
+            },
+            {
+              "C": 10.0,
+              "iterations": 92,
+              "validation_log_loss": 0.6688340509167053
+            },
+            {
+              "C": 100.0,
+              "iterations": 149,
+              "validation_log_loss": 0.6759573266565939
+            },
+            {
+              "C": 1000.0,
+              "iterations": 196,
+              "validation_log_loss": 0.6820380229289255
+            },
+            {
+              "C": 10000.0,
+              "iterations": 157,
+              "validation_log_loss": 0.6819198571991577
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.651476793248944,
+              "BODY_FAT_PCT": 7.63801687763713,
+              "HAND_LENGTH": 8.7415611814346,
+              "HAND_WIDTH": 9.470675105485233,
+              "HEIGHT_WO_SHOES": 77.65502109704641,
+              "HEIGHT_W_SHOES": 78.93860759493671,
+              "LANE_AGILITY_TIME": 11.456354430379747,
+              "MAX_VERTICAL_LEAP": 34.10632911392405,
+              "MODIFIED_LANE_AGILITY_TIME": 3.0623206751054846,
+              "STANDING_REACH": 103.52248945147679,
+              "STANDING_VERTICAL_LEAP": 29.106540084388186,
+              "THREE_QUARTER_SPRINT": 3.2896286919831224,
+              "WEIGHT": 216.9629535864979,
+              "WINGSPAN": 82.43341772151899,
+              "combine_year": 2007.884388185654
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.25,
+              "LANE_AGILITY_TIME": 11.4,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 4.996459498857471,
+              "BODY_FAT_PCT": 2.7239405620110646,
+              "HAND_LENGTH": 0.2918233264353087,
+              "HAND_WIDTH": 0.45229695998666025,
+              "HEIGHT_WO_SHOES": 3.4344110746872833,
+              "HEIGHT_W_SHOES": 2.89976300537966,
+              "LANE_AGILITY_TIME": 0.5808784640446918,
+              "MAX_VERTICAL_LEAP": 3.5105750465567334,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07901886835220039,
+              "STANDING_REACH": 4.963985753618257,
+              "STANDING_VERTICAL_LEAP": 2.964467750143723,
+              "THREE_QUARTER_SPRINT": 0.1272461869297564,
+              "WEIGHT": 26.766745279912204,
+              "WINGSPAN": 4.073963501866244,
+              "combine_year": 5.159167922758385
+            },
+            "output_feature_count": 43,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "baseline_plus_name": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6622320821393544
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6481701611689821
+            },
+            {
+              "C": 0.01,
+              "iterations": 12,
+              "validation_log_loss": 0.671411362938695
+            },
+            {
+              "C": 0.1,
+              "iterations": 27,
+              "validation_log_loss": 0.6619941309387862
+            },
+            {
+              "C": 1.0,
+              "iterations": 59,
+              "validation_log_loss": 0.6519420011137859
+            },
+            {
+              "C": 10.0,
+              "iterations": 95,
+              "validation_log_loss": 0.6623838080415875
+            },
+            {
+              "C": 100.0,
+              "iterations": 157,
+              "validation_log_loss": 0.6689937851367587
+            },
+            {
+              "C": 1000.0,
+              "iterations": 159,
+              "validation_log_loss": 0.6744039334225217
+            },
+            {
+              "C": 10000.0,
+              "iterations": 176,
+              "validation_log_loss": 0.6792499682973016
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS",
+              "surname_conservative_surprisal_bits",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.651476793248944,
+              "BODY_FAT_PCT": 7.63801687763713,
+              "HAND_LENGTH": 8.7415611814346,
+              "HAND_WIDTH": 9.470675105485233,
+              "HEIGHT_WO_SHOES": 77.65502109704641,
+              "HEIGHT_W_SHOES": 78.93860759493671,
+              "LANE_AGILITY_TIME": 11.456354430379747,
+              "MAX_VERTICAL_LEAP": 34.10632911392405,
+              "MODIFIED_LANE_AGILITY_TIME": 3.0623206751054846,
+              "STANDING_REACH": 103.52248945147679,
+              "STANDING_VERTICAL_LEAP": 29.106540084388186,
+              "THREE_QUARTER_SPRINT": 3.2896286919831224,
+              "WEIGHT": 216.9629535864979,
+              "WINGSPAN": 82.43341772151899,
+              "combine_year": 2007.884388185654,
+              "given_generation_ssa_ever_observed": 0.8911392405063291,
+              "given_generation_surprisal": 11.994979882323983,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 13.777629288723418,
+              "surname_observed": 0.8945147679324894
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.25,
+              "LANE_AGILITY_TIME": 11.4,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.443206960769173,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.863847100938099,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 4.996459498857471,
+              "BODY_FAT_PCT": 2.7239405620110646,
+              "HAND_LENGTH": 0.2918233264353087,
+              "HAND_WIDTH": 0.45229695998666025,
+              "HEIGHT_WO_SHOES": 3.4344110746872833,
+              "HEIGHT_W_SHOES": 2.89976300537966,
+              "LANE_AGILITY_TIME": 0.5808784640446918,
+              "MAX_VERTICAL_LEAP": 3.5105750465567334,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07901886835220039,
+              "STANDING_REACH": 4.963985753618257,
+              "STANDING_VERTICAL_LEAP": 2.964467750143723,
+              "THREE_QUARTER_SPRINT": 0.1272461869297564,
+              "WEIGHT": 26.766745279912204,
+              "WINGSPAN": 4.073963501866244,
+              "combine_year": 5.159167922758385,
+              "given_generation_ssa_ever_observed": 0.3114644354274369,
+              "given_generation_surprisal": 4.10265521273415,
+              "surname_conservative_surprisal_bits": 4.287543680034524,
+              "surname_observed": 0.3071776324590936
+            },
+            "output_feature_count": 49,
+            "zero_variance_dropped": [
+              "initials"
+            ]
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "name_only": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6656869297919157
+            },
+            {
+              "C": 0.001,
+              "iterations": 6,
+              "validation_log_loss": 0.6583176959551956
+            },
+            {
+              "C": 0.01,
+              "iterations": 6,
+              "validation_log_loss": 0.6927372318392003
+            },
+            {
+              "C": 0.1,
+              "iterations": 11,
+              "validation_log_loss": 0.7335771831509321
+            },
+            {
+              "C": 1.0,
+              "iterations": 13,
+              "validation_log_loss": 0.7406724104247653
+            },
+            {
+              "C": 10.0,
+              "iterations": 15,
+              "validation_log_loss": 0.7416441290291333
+            },
+            {
+              "C": 100.0,
+              "iterations": 18,
+              "validation_log_loss": 0.7417956865202764
+            },
+            {
+              "C": 1000.0,
+              "iterations": 20,
+              "validation_log_loss": 0.7419216633499485
+            },
+            {
+              "C": 10000.0,
+              "iterations": 21,
+              "validation_log_loss": 0.7417281367826091
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {},
+            "missing_indicators": [
+              "surname_conservative_surprisal_bits",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "combine_year": 2007.884388185654,
+              "given_generation_ssa_ever_observed": 0.8911392405063291,
+              "given_generation_surprisal": 11.994979882323983,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 13.777629288723418,
+              "surname_observed": 0.8945147679324894
+            },
+            "numeric_medians": {
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.443206960769173,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.863847100938099,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "combine_year": 5.159167922758385,
+              "given_generation_ssa_ever_observed": 0.3114644354274369,
+              "given_generation_surprisal": 4.10265521273415,
+              "surname_conservative_surprisal_bits": 4.287543680034524,
+              "surname_observed": 0.3071776324590936
+            },
+            "output_feature_count": 7,
+            "zero_variance_dropped": [
+              "initials"
+            ]
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        }
+      },
+      "split_row_counts": {
+        "test": 325,
+        "train": 1185,
+        "validation": 264
+      }
+    },
+    "final_combine_appearance_only": {
+      "detail": {},
+      "models": {
+        "baseline": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 6,
+              "validation_log_loss": 0.640440827088614
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6157968665608341
+            },
+            {
+              "C": 0.01,
+              "iterations": 13,
+              "validation_log_loss": 0.6352288699484457
+            },
+            {
+              "C": 0.1,
+              "iterations": 25,
+              "validation_log_loss": 0.6343389512441954
+            },
+            {
+              "C": 1.0,
+              "iterations": 61,
+              "validation_log_loss": 0.6266557471850093
+            },
+            {
+              "C": 10.0,
+              "iterations": 94,
+              "validation_log_loss": 0.6316880110945354
+            },
+            {
+              "C": 100.0,
+              "iterations": 133,
+              "validation_log_loss": 0.6338218263125746
+            },
+            {
+              "C": 1000.0,
+              "iterations": 196,
+              "validation_log_loss": 0.6345921586988696
+            },
+            {
+              "C": 10000.0,
+              "iterations": 201,
+              "validation_log_loss": 0.6333854363443422
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.67031118587048,
+              "BODY_FAT_PCT": 7.620185029436502,
+              "HAND_LENGTH": 8.7432716568545,
+              "HAND_WIDTH": 9.467199327165686,
+              "HEIGHT_WO_SHOES": 77.64356602186712,
+              "HEIGHT_W_SHOES": 78.87005887300252,
+              "LANE_AGILITY_TIME": 11.448351555929353,
+              "MAX_VERTICAL_LEAP": 34.1219512195122,
+              "MODIFIED_LANE_AGILITY_TIME": 3.0625063078216983,
+              "STANDING_REACH": 103.50559293523969,
+              "STANDING_VERTICAL_LEAP": 29.120479394449116,
+              "THREE_QUARTER_SPRINT": 3.288772077375946,
+              "WEIGHT": 216.78410428931875,
+              "WINGSPAN": 82.41156433978134,
+              "combine_year": 2007.8486122792262
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.39,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.045192065856398,
+              "BODY_FAT_PCT": 2.715861666488192,
+              "HAND_LENGTH": 0.2902917143849761,
+              "HAND_WIDTH": 0.45170062147149037,
+              "HEIGHT_WO_SHOES": 3.4317364709592866,
+              "HEIGHT_W_SHOES": 2.889621971003482,
+              "LANE_AGILITY_TIME": 0.5778188804273526,
+              "MAX_VERTICAL_LEAP": 3.485500070690642,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07785027575674103,
+              "STANDING_REACH": 4.951049731696952,
+              "STANDING_VERTICAL_LEAP": 2.9512515095213043,
+              "THREE_QUARTER_SPRINT": 0.12643992258255296,
+              "WEIGHT": 26.838228411446714,
+              "WINGSPAN": 4.072854039307959,
+              "combine_year": 5.129176606231728
+            },
+            "output_feature_count": 43,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "baseline_plus_name": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 6,
+              "validation_log_loss": 0.6403926504346696
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6148530987231812
+            },
+            {
+              "C": 0.01,
+              "iterations": 13,
+              "validation_log_loss": 0.6296071141612009
+            },
+            {
+              "C": 0.1,
+              "iterations": 26,
+              "validation_log_loss": 0.6265058062153992
+            },
+            {
+              "C": 1.0,
+              "iterations": 57,
+              "validation_log_loss": 0.6177676292812814
+            },
+            {
+              "C": 10.0,
+              "iterations": 95,
+              "validation_log_loss": 0.6234953299827172
+            },
+            {
+              "C": 100.0,
+              "iterations": 156,
+              "validation_log_loss": 0.6247816848747413
+            },
+            {
+              "C": 1000.0,
+              "iterations": 174,
+              "validation_log_loss": 0.6254604195078955
+            },
+            {
+              "C": 10000.0,
+              "iterations": 206,
+              "validation_log_loss": 0.6256476411489368
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS",
+              "given_generation_surprisal",
+              "surname_conservative_surprisal_bits",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.67031118587048,
+              "BODY_FAT_PCT": 7.620185029436502,
+              "HAND_LENGTH": 8.7432716568545,
+              "HAND_WIDTH": 9.467199327165686,
+              "HEIGHT_WO_SHOES": 77.64356602186712,
+              "HEIGHT_W_SHOES": 78.87005887300252,
+              "LANE_AGILITY_TIME": 11.448351555929353,
+              "MAX_VERTICAL_LEAP": 34.1219512195122,
+              "MODIFIED_LANE_AGILITY_TIME": 3.0625063078216983,
+              "STANDING_REACH": 103.50559293523969,
+              "STANDING_VERTICAL_LEAP": 29.120479394449116,
+              "THREE_QUARTER_SPRINT": 3.288772077375946,
+              "WEIGHT": 216.78410428931875,
+              "WINGSPAN": 82.41156433978134,
+              "combine_year": 2007.8486122792262,
+              "given_generation_ssa_ever_observed": 0.8957106812447435,
+              "given_generation_surprisal": 11.968180457284447,
+              "initials": 0.0159798149705635,
+              "surname_conservative_surprisal_bits": 13.743774989749632,
+              "surname_observed": 0.896551724137931
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.39,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.431627031100904,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.863847100938099,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.045192065856398,
+              "BODY_FAT_PCT": 2.715861666488192,
+              "HAND_LENGTH": 0.2902917143849761,
+              "HAND_WIDTH": 0.45170062147149037,
+              "HEIGHT_WO_SHOES": 3.4317364709592866,
+              "HEIGHT_W_SHOES": 2.889621971003482,
+              "LANE_AGILITY_TIME": 0.5778188804273526,
+              "MAX_VERTICAL_LEAP": 3.485500070690642,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07785027575674103,
+              "STANDING_REACH": 4.951049731696952,
+              "STANDING_VERTICAL_LEAP": 2.9512515095213043,
+              "THREE_QUARTER_SPRINT": 0.12643992258255296,
+              "WEIGHT": 26.838228411446714,
+              "WINGSPAN": 4.072854039307959,
+              "combine_year": 5.129176606231728,
+              "given_generation_ssa_ever_observed": 0.30563549654583816,
+              "given_generation_surprisal": 4.056814554338709,
+              "initials": 0.12539721083050476,
+              "surname_conservative_surprisal_bits": 4.265963534196609,
+              "surname_observed": 0.3045434781492361
+            },
+            "output_feature_count": 52,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "name_only": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6447081119754204
+            },
+            {
+              "C": 0.001,
+              "iterations": 6,
+              "validation_log_loss": 0.6273398277250734
+            },
+            {
+              "C": 0.01,
+              "iterations": 7,
+              "validation_log_loss": 0.6433039976771369
+            },
+            {
+              "C": 0.1,
+              "iterations": 11,
+              "validation_log_loss": 0.6796138229123854
+            },
+            {
+              "C": 1.0,
+              "iterations": 13,
+              "validation_log_loss": 0.6861526704816419
+            },
+            {
+              "C": 10.0,
+              "iterations": 16,
+              "validation_log_loss": 0.6870314757733863
+            },
+            {
+              "C": 100.0,
+              "iterations": 18,
+              "validation_log_loss": 0.6871941890996156
+            },
+            {
+              "C": 1000.0,
+              "iterations": 20,
+              "validation_log_loss": 0.6871001689889886
+            },
+            {
+              "C": 10000.0,
+              "iterations": 20,
+              "validation_log_loss": 0.6870066315581437
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {},
+            "missing_indicators": [
+              "given_generation_surprisal",
+              "surname_conservative_surprisal_bits",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "combine_year": 2007.8486122792262,
+              "given_generation_ssa_ever_observed": 0.8957106812447435,
+              "given_generation_surprisal": 11.968180457284447,
+              "initials": 0.0159798149705635,
+              "surname_conservative_surprisal_bits": 13.743774989749632,
+              "surname_observed": 0.896551724137931
+            },
+            "numeric_medians": {
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.431627031100904,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.863847100938099,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "combine_year": 5.129176606231728,
+              "given_generation_ssa_ever_observed": 0.30563549654583816,
+              "given_generation_surprisal": 4.056814554338709,
+              "initials": 0.12539721083050476,
+              "surname_conservative_surprisal_bits": 4.265963534196609,
+              "surname_observed": 0.3045434781492361
+            },
+            "output_feature_count": 10,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        }
+      },
+      "split_row_counts": {
+        "test": 301,
+        "train": 1189,
+        "validation": 244
+      }
+    },
+    "ssa_suppression_midpoint_2_5": {
+      "detail": {},
+      "models": {
+        "baseline": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6612986476182225
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6490961806085211
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6774413715523475
+            },
+            {
+              "C": 0.1,
+              "iterations": 25,
+              "validation_log_loss": 0.6695318776463337
+            },
+            {
+              "C": 1.0,
+              "iterations": 60,
+              "validation_log_loss": 0.6600004676374318
+            },
+            {
+              "C": 10.0,
+              "iterations": 89,
+              "validation_log_loss": 0.6700186677898451
+            },
+            {
+              "C": 100.0,
+              "iterations": 150,
+              "validation_log_loss": 0.6764928892283996
+            },
+            {
+              "C": 1000.0,
+              "iterations": 204,
+              "validation_log_loss": 0.6838716780508116
+            },
+            {
+              "C": 10000.0,
+              "iterations": 160,
+              "validation_log_loss": 0.6819736759263405
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576
+            },
+            "output_feature_count": 43,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "baseline_plus_name": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6611101655084463
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6471764028433669
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6691856623798877
+            },
+            {
+              "C": 0.1,
+              "iterations": 27,
+              "validation_log_loss": 0.6584942246576022
+            },
+            {
+              "C": 1.0,
+              "iterations": 62,
+              "validation_log_loss": 0.6492640698414818
+            },
+            {
+              "C": 10.0,
+              "iterations": 96,
+              "validation_log_loss": 0.6602584006802068
+            },
+            {
+              "C": 100.0,
+              "iterations": 162,
+              "validation_log_loss": 0.668221577586219
+            },
+            {
+              "C": 1000.0,
+              "iterations": 169,
+              "validation_log_loss": 0.6675753196365602
+            },
+            {
+              "C": 10000.0,
+              "iterations": 194,
+              "validation_log_loss": 0.6803684044259625
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS",
+              "given_generation_sensitivity_surprisal_midpoint",
+              "surname_conservative_surprisal_bits",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0,
+              "given_generation_sensitivity_surprisal_midpoint": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064,
+              "given_generation_sensitivity_surprisal_midpoint": 12.069884447459193,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "initials": 0.015780730897009966,
+              "surname_conservative_surprisal_bits": 13.773114468449512,
+              "surname_observed": 0.8953488372093024
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0,
+              "given_generation_sensitivity_surprisal_midpoint": 11.443206960769173,
+              "given_generation_ssa_ever_observed": 1.0,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.903509164396098,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576,
+              "given_generation_sensitivity_surprisal_midpoint": 4.213694273357467,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "initials": 0.12462623892810906,
+              "surname_conservative_surprisal_bits": 4.274227409132955,
+              "surname_observed": 0.30610340886251586
+            },
+            "output_feature_count": 52,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "name_only": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6646138445611173
+            },
+            {
+              "C": 0.001,
+              "iterations": 6,
+              "validation_log_loss": 0.6572366940506119
+            },
+            {
+              "C": 0.01,
+              "iterations": 6,
+              "validation_log_loss": 0.6908707195439727
+            },
+            {
+              "C": 0.1,
+              "iterations": 11,
+              "validation_log_loss": 0.7303689062098728
+            },
+            {
+              "C": 1.0,
+              "iterations": 14,
+              "validation_log_loss": 0.7372327589893123
+            },
+            {
+              "C": 10.0,
+              "iterations": 16,
+              "validation_log_loss": 0.738152147996983
+            },
+            {
+              "C": 100.0,
+              "iterations": 18,
+              "validation_log_loss": 0.7383260399397312
+            },
+            {
+              "C": 1000.0,
+              "iterations": 20,
+              "validation_log_loss": 0.7383710475906902
+            },
+            {
+              "C": 10000.0,
+              "iterations": 20,
+              "validation_log_loss": 0.7383399649035232
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {},
+            "missing_indicators": [
+              "given_generation_sensitivity_surprisal_midpoint",
+              "surname_conservative_surprisal_bits",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "combine_year": 0,
+              "given_generation_sensitivity_surprisal_midpoint": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "combine_year": 2007.9111295681064,
+              "given_generation_sensitivity_surprisal_midpoint": 12.069884447459193,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "initials": 0.015780730897009966,
+              "surname_conservative_surprisal_bits": 13.773114468449512,
+              "surname_observed": 0.8953488372093024
+            },
+            "numeric_medians": {
+              "combine_year": 2007.0,
+              "given_generation_sensitivity_surprisal_midpoint": 11.443206960769173,
+              "given_generation_ssa_ever_observed": 1.0,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.903509164396098,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "combine_year": 5.171276636028576,
+              "given_generation_sensitivity_surprisal_midpoint": 4.213694273357467,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "initials": 0.12462623892810906,
+              "surname_conservative_surprisal_bits": 4.274227409132955,
+              "surname_observed": 0.30610340886251586
+            },
+            "output_feature_count": 10,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        }
+      },
+      "split_row_counts": {
+        "test": 326,
+        "train": 1204,
+        "validation": 265
+      }
+    },
+    "ssa_suppression_zero": {
+      "detail": {
+        "undefined_scores": "median_imputed_with_observed_indicator_retained"
+      },
+      "models": {
+        "baseline": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6612986476182225
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6490961806085211
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6774413715523475
+            },
+            {
+              "C": 0.1,
+              "iterations": 25,
+              "validation_log_loss": 0.6695318776463337
+            },
+            {
+              "C": 1.0,
+              "iterations": 60,
+              "validation_log_loss": 0.6600004676374318
+            },
+            {
+              "C": 10.0,
+              "iterations": 89,
+              "validation_log_loss": 0.6700186677898451
+            },
+            {
+              "C": 100.0,
+              "iterations": 150,
+              "validation_log_loss": 0.6764928892283996
+            },
+            {
+              "C": 1000.0,
+              "iterations": 204,
+              "validation_log_loss": 0.6838716780508116
+            },
+            {
+              "C": 10000.0,
+              "iterations": 160,
+              "validation_log_loss": 0.6819736759263405
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576
+            },
+            "output_feature_count": 43,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "baseline_plus_name": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6611310530025312
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6473401517663505
+            },
+            {
+              "C": 0.01,
+              "iterations": 13,
+              "validation_log_loss": 0.6693155139076811
+            },
+            {
+              "C": 0.1,
+              "iterations": 27,
+              "validation_log_loss": 0.6585982906741934
+            },
+            {
+              "C": 1.0,
+              "iterations": 62,
+              "validation_log_loss": 0.6491181760909657
+            },
+            {
+              "C": 10.0,
+              "iterations": 110,
+              "validation_log_loss": 0.6591734014954956
+            },
+            {
+              "C": 100.0,
+              "iterations": 157,
+              "validation_log_loss": 0.6664552487790296
+            },
+            {
+              "C": 1000.0,
+              "iterations": 174,
+              "validation_log_loss": 0.6696106263218853
+            },
+            {
+              "C": 10000.0,
+              "iterations": 215,
+              "validation_log_loss": 0.6704630364696752
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS",
+              "given_generation_sensitivity_surprisal_zero",
+              "surname_conservative_surprisal_bits",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0,
+              "given_generation_sensitivity_surprisal_zero": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064,
+              "given_generation_sensitivity_surprisal_zero": 11.169995896215365,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "initials": 0.015780730897009966,
+              "surname_conservative_surprisal_bits": 13.773114468449512,
+              "surname_observed": 0.8953488372093024
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0,
+              "given_generation_sensitivity_surprisal_zero": 10.900200263522828,
+              "given_generation_ssa_ever_observed": 1.0,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.903509164396098,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576,
+              "given_generation_sensitivity_surprisal_zero": 3.413053042094844,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "initials": 0.12462623892810906,
+              "surname_conservative_surprisal_bits": 4.274227409132955,
+              "surname_observed": 0.30610340886251586
+            },
+            "output_feature_count": 52,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "name_only": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6646331328366989
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.657364148509454
+            },
+            {
+              "C": 0.01,
+              "iterations": 7,
+              "validation_log_loss": 0.6911428410169832
+            },
+            {
+              "C": 0.1,
+              "iterations": 11,
+              "validation_log_loss": 0.7305460285276897
+            },
+            {
+              "C": 1.0,
+              "iterations": 13,
+              "validation_log_loss": 0.7373373972797226
+            },
+            {
+              "C": 10.0,
+              "iterations": 14,
+              "validation_log_loss": 0.7383622566562865
+            },
+            {
+              "C": 100.0,
+              "iterations": 18,
+              "validation_log_loss": 0.7384734946653181
+            },
+            {
+              "C": 1000.0,
+              "iterations": 20,
+              "validation_log_loss": 0.7384498368421409
+            },
+            {
+              "C": 10000.0,
+              "iterations": 21,
+              "validation_log_loss": 0.7385023901912707
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {},
+            "missing_indicators": [
+              "given_generation_sensitivity_surprisal_zero",
+              "surname_conservative_surprisal_bits",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "combine_year": 0,
+              "given_generation_sensitivity_surprisal_zero": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "initials": 0,
+              "surname_conservative_surprisal_bits": 0,
+              "surname_observed": 0
+            },
+            "numeric_means": {
+              "combine_year": 2007.9111295681064,
+              "given_generation_sensitivity_surprisal_zero": 11.169995896215365,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "initials": 0.015780730897009966,
+              "surname_conservative_surprisal_bits": 13.773114468449512,
+              "surname_observed": 0.8953488372093024
+            },
+            "numeric_medians": {
+              "combine_year": 2007.0,
+              "given_generation_sensitivity_surprisal_zero": 10.900200263522828,
+              "given_generation_ssa_ever_observed": 1.0,
+              "initials": 0.0,
+              "surname_conservative_surprisal_bits": 12.903509164396098,
+              "surname_observed": 1.0
+            },
+            "numeric_scales": {
+              "combine_year": 5.171276636028576,
+              "given_generation_sensitivity_surprisal_zero": 3.413053042094844,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "initials": 0.12462623892810906,
+              "surname_conservative_surprisal_bits": 4.274227409132955,
+              "surname_observed": 0.30610340886251586
+            },
+            "output_feature_count": 10,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        }
+      },
+      "split_row_counts": {
+        "test": 326,
+        "train": 1204,
+        "validation": 265
+      }
+    },
+    "surname_unpublished_count_1": {
+      "detail": {},
+      "models": {
+        "baseline": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6612986476182225
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6490961806085211
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6774413715523475
+            },
+            {
+              "C": 0.1,
+              "iterations": 25,
+              "validation_log_loss": 0.6695318776463337
+            },
+            {
+              "C": 1.0,
+              "iterations": 60,
+              "validation_log_loss": 0.6600004676374318
+            },
+            {
+              "C": 10.0,
+              "iterations": 89,
+              "validation_log_loss": 0.6700186677898451
+            },
+            {
+              "C": 100.0,
+              "iterations": 150,
+              "validation_log_loss": 0.6764928892283996
+            },
+            {
+              "C": 1000.0,
+              "iterations": 204,
+              "validation_log_loss": 0.6838716780508116
+            },
+            {
+              "C": 10000.0,
+              "iterations": 160,
+              "validation_log_loss": 0.6819736759263405
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576
+            },
+            "output_feature_count": 43,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "baseline_plus_name": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6611599930564505
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6475243520330882
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6699550317705867
+            },
+            {
+              "C": 0.1,
+              "iterations": 27,
+              "validation_log_loss": 0.6587378311868262
+            },
+            {
+              "C": 1.0,
+              "iterations": 65,
+              "validation_log_loss": 0.6491998713752061
+            },
+            {
+              "C": 10.0,
+              "iterations": 98,
+              "validation_log_loss": 0.6595404676010638
+            },
+            {
+              "C": 100.0,
+              "iterations": 159,
+              "validation_log_loss": 0.6668273482735416
+            },
+            {
+              "C": 1000.0,
+              "iterations": 168,
+              "validation_log_loss": 0.6692659232571072
+            },
+            {
+              "C": 10000.0,
+              "iterations": 197,
+              "validation_log_loss": 0.6781941540975883
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS",
+              "given_generation_surprisal",
+              "surname_sensitivity_surprisal_one",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_observed": 0,
+              "surname_sensitivity_surprisal_one": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "given_generation_surprisal": 11.98627250233267,
+              "initials": 0.015780730897009966,
+              "surname_observed": 0.8953488372093024,
+              "surname_sensitivity_surprisal_one": 14.466884347295052
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.443206960769173,
+              "initials": 0.0,
+              "surname_observed": 1.0,
+              "surname_sensitivity_surprisal_one": 12.903509164396098
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "given_generation_surprisal": 4.070735889879047,
+              "initials": 0.12462623892810906,
+              "surname_observed": 0.30610340886251586,
+              "surname_sensitivity_surprisal_one": 5.754788359689084
+            },
+            "output_feature_count": 52,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "name_only": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6646650014193037
+            },
+            {
+              "C": 0.001,
+              "iterations": 6,
+              "validation_log_loss": 0.6576080365015744
+            },
+            {
+              "C": 0.01,
+              "iterations": 8,
+              "validation_log_loss": 0.6917449327234779
+            },
+            {
+              "C": 0.1,
+              "iterations": 14,
+              "validation_log_loss": 0.7306107247198894
+            },
+            {
+              "C": 1.0,
+              "iterations": 16,
+              "validation_log_loss": 0.7371772109688464
+            },
+            {
+              "C": 10.0,
+              "iterations": 18,
+              "validation_log_loss": 0.7381340481333469
+            },
+            {
+              "C": 100.0,
+              "iterations": 19,
+              "validation_log_loss": 0.7382914610556685
+            },
+            {
+              "C": 1000.0,
+              "iterations": 21,
+              "validation_log_loss": 0.7382654292100638
+            },
+            {
+              "C": 10000.0,
+              "iterations": 22,
+              "validation_log_loss": 0.7383288072453444
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {},
+            "missing_indicators": [
+              "given_generation_surprisal",
+              "surname_sensitivity_surprisal_one",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_observed": 0,
+              "surname_sensitivity_surprisal_one": 0
+            },
+            "numeric_means": {
+              "combine_year": 2007.9111295681064,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "given_generation_surprisal": 11.98627250233267,
+              "initials": 0.015780730897009966,
+              "surname_observed": 0.8953488372093024,
+              "surname_sensitivity_surprisal_one": 14.466884347295052
+            },
+            "numeric_medians": {
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.443206960769173,
+              "initials": 0.0,
+              "surname_observed": 1.0,
+              "surname_sensitivity_surprisal_one": 12.903509164396098
+            },
+            "numeric_scales": {
+              "combine_year": 5.171276636028576,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "given_generation_surprisal": 4.070735889879047,
+              "initials": 0.12462623892810906,
+              "surname_observed": 0.30610340886251586,
+              "surname_sensitivity_surprisal_one": 5.754788359689084
+            },
+            "output_feature_count": 10,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        }
+      },
+      "split_row_counts": {
+        "test": 326,
+        "train": 1204,
+        "validation": 265
+      }
+    },
+    "surname_unpublished_count_50": {
+      "detail": {},
+      "models": {
+        "baseline": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6612986476182225
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6490961806085211
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6774413715523475
+            },
+            {
+              "C": 0.1,
+              "iterations": 25,
+              "validation_log_loss": 0.6695318776463337
+            },
+            {
+              "C": 1.0,
+              "iterations": 60,
+              "validation_log_loss": 0.6600004676374318
+            },
+            {
+              "C": 10.0,
+              "iterations": 89,
+              "validation_log_loss": 0.6700186677898451
+            },
+            {
+              "C": 100.0,
+              "iterations": 150,
+              "validation_log_loss": 0.6764928892283996
+            },
+            {
+              "C": 1000.0,
+              "iterations": 204,
+              "validation_log_loss": 0.6838716780508116
+            },
+            {
+              "C": 10000.0,
+              "iterations": 160,
+              "validation_log_loss": 0.6819736759263405
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576
+            },
+            "output_feature_count": 43,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "baseline_plus_name": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.661122674329396
+            },
+            {
+              "C": 0.001,
+              "iterations": 7,
+              "validation_log_loss": 0.6472538639883422
+            },
+            {
+              "C": 0.01,
+              "iterations": 14,
+              "validation_log_loss": 0.6693018365817972
+            },
+            {
+              "C": 0.1,
+              "iterations": 28,
+              "validation_log_loss": 0.6584911342945812
+            },
+            {
+              "C": 1.0,
+              "iterations": 59,
+              "validation_log_loss": 0.6490206501182636
+            },
+            {
+              "C": 10.0,
+              "iterations": 91,
+              "validation_log_loss": 0.6600344923394496
+            },
+            {
+              "C": 100.0,
+              "iterations": 162,
+              "validation_log_loss": 0.6653282638579283
+            },
+            {
+              "C": 1000.0,
+              "iterations": 160,
+              "validation_log_loss": 0.6716078068661312
+            },
+            {
+              "C": 10000.0,
+              "iterations": 165,
+              "validation_log_loss": 0.6701367480315267
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {
+              "POSITION": [
+                "C",
+                "C-PF",
+                "PF",
+                "PF-C",
+                "PF-SF",
+                "PG",
+                "PG-SG",
+                "SF",
+                "SF-PF",
+                "SF-SG",
+                "SG",
+                "SG-PG",
+                "SG-SF",
+                "__MISSING__"
+              ]
+            },
+            "missing_indicators": [
+              "HEIGHT_WO_SHOES",
+              "HEIGHT_W_SHOES",
+              "WEIGHT",
+              "WINGSPAN",
+              "STANDING_REACH",
+              "BODY_FAT_PCT",
+              "HAND_LENGTH",
+              "HAND_WIDTH",
+              "STANDING_VERTICAL_LEAP",
+              "MAX_VERTICAL_LEAP",
+              "LANE_AGILITY_TIME",
+              "MODIFIED_LANE_AGILITY_TIME",
+              "THREE_QUARTER_SPRINT",
+              "BENCH_PRESS",
+              "given_generation_surprisal",
+              "surname_sensitivity_surprisal_midpoint",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "BENCH_PRESS": 0,
+              "BODY_FAT_PCT": 0,
+              "HAND_LENGTH": 0,
+              "HAND_WIDTH": 0,
+              "HEIGHT_WO_SHOES": 0,
+              "HEIGHT_W_SHOES": 0,
+              "LANE_AGILITY_TIME": 0,
+              "MAX_VERTICAL_LEAP": 0,
+              "MODIFIED_LANE_AGILITY_TIME": 0,
+              "STANDING_REACH": 0,
+              "STANDING_VERTICAL_LEAP": 0,
+              "THREE_QUARTER_SPRINT": 0,
+              "WEIGHT": 0,
+              "WINGSPAN": 0,
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_observed": 0,
+              "surname_sensitivity_surprisal_midpoint": 0
+            },
+            "numeric_means": {
+              "BENCH_PRESS": 10.652823920265782,
+              "BODY_FAT_PCT": 7.628820598006645,
+              "HAND_LENGTH": 8.741279069767442,
+              "HAND_WIDTH": 9.468853820598007,
+              "HEIGHT_WO_SHOES": 77.63035714285714,
+              "HEIGHT_W_SHOES": 78.86295681063123,
+              "LANE_AGILITY_TIME": 11.451569767441859,
+              "MAX_VERTICAL_LEAP": 34.1328903654485,
+              "MODIFIED_LANE_AGILITY_TIME": 3.062367109634551,
+              "STANDING_REACH": 103.48475913621262,
+              "STANDING_VERTICAL_LEAP": 29.11690199335548,
+              "THREE_QUARTER_SPRINT": 3.288662790697674,
+              "WEIGHT": 216.76885382059803,
+              "WINGSPAN": 82.39750830564785,
+              "combine_year": 2007.9111295681064,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "given_generation_surprisal": 11.98627250233267,
+              "initials": 0.015780730897009966,
+              "surname_observed": 0.8953488372093024,
+              "surname_sensitivity_surprisal_midpoint": 13.876248234411651
+            },
+            "numeric_medians": {
+              "BENCH_PRESS": 11.0,
+              "BODY_FAT_PCT": 7.0,
+              "HAND_LENGTH": 8.75,
+              "HAND_WIDTH": 9.5,
+              "HEIGHT_WO_SHOES": 78.0,
+              "HEIGHT_W_SHOES": 79.0,
+              "LANE_AGILITY_TIME": 11.395,
+              "MAX_VERTICAL_LEAP": 34.0,
+              "MODIFIED_LANE_AGILITY_TIME": 3.06,
+              "STANDING_REACH": 104.0,
+              "STANDING_VERTICAL_LEAP": 29.0,
+              "THREE_QUARTER_SPRINT": 3.27,
+              "WEIGHT": 216.0,
+              "WINGSPAN": 82.75,
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.443206960769173,
+              "initials": 0.0,
+              "surname_observed": 1.0,
+              "surname_sensitivity_surprisal_midpoint": 12.903509164396098
+            },
+            "numeric_scales": {
+              "BENCH_PRESS": 5.026250063406409,
+              "BODY_FAT_PCT": 2.715790684295207,
+              "HAND_LENGTH": 0.29093221435465133,
+              "HAND_WIDTH": 0.45209186938696616,
+              "HEIGHT_WO_SHOES": 3.432638794239511,
+              "HEIGHT_W_SHOES": 2.8889521881891684,
+              "LANE_AGILITY_TIME": 0.5799490777992024,
+              "MAX_VERTICAL_LEAP": 3.5052449478069923,
+              "MODIFIED_LANE_AGILITY_TIME": 0.07891158335752302,
+              "STANDING_REACH": 4.958012059269157,
+              "STANDING_VERTICAL_LEAP": 2.9576339291455995,
+              "THREE_QUARTER_SPRINT": 0.12684763106118013,
+              "WEIGHT": 26.777328729771003,
+              "WINGSPAN": 4.079439831598452,
+              "combine_year": 5.171276636028576,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "given_generation_surprisal": 4.070735889879047,
+              "initials": 0.12462623892810906,
+              "surname_observed": 0.30610340886251586,
+              "surname_sensitivity_surprisal_midpoint": 4.467125074752087
+            },
+            "output_feature_count": 52,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        },
+        "name_only": {
+          "candidates": [
+            {
+              "C": 0.0001,
+              "iterations": 7,
+              "validation_log_loss": 0.6646266650530679
+            },
+            {
+              "C": 0.001,
+              "iterations": 6,
+              "validation_log_loss": 0.6573199485803554
+            },
+            {
+              "C": 0.01,
+              "iterations": 6,
+              "validation_log_loss": 0.6910045448100108
+            },
+            {
+              "C": 0.1,
+              "iterations": 12,
+              "validation_log_loss": 0.7303679466092097
+            },
+            {
+              "C": 1.0,
+              "iterations": 13,
+              "validation_log_loss": 0.7370200762658228
+            },
+            {
+              "C": 10.0,
+              "iterations": 15,
+              "validation_log_loss": 0.7382696949929176
+            },
+            {
+              "C": 100.0,
+              "iterations": 18,
+              "validation_log_loss": 0.7383099129413496
+            },
+            {
+              "C": 1000.0,
+              "iterations": 20,
+              "validation_log_loss": 0.7383767108756261
+            },
+            {
+              "C": 10000.0,
+              "iterations": 21,
+              "validation_log_loss": 0.7384460944240817
+            }
+          ],
+          "preprocessing": {
+            "categorical_levels": {},
+            "missing_indicators": [
+              "given_generation_surprisal",
+              "surname_sensitivity_surprisal_midpoint",
+              "given_generation_ssa_ever_observed",
+              "surname_observed"
+            ],
+            "numeric_coercion_failures": {
+              "combine_year": 0,
+              "given_generation_ssa_ever_observed": 0,
+              "given_generation_surprisal": 0,
+              "initials": 0,
+              "surname_observed": 0,
+              "surname_sensitivity_surprisal_midpoint": 0
+            },
+            "numeric_means": {
+              "combine_year": 2007.9111295681064,
+              "given_generation_ssa_ever_observed": 0.8928571428571429,
+              "given_generation_surprisal": 11.98627250233267,
+              "initials": 0.015780730897009966,
+              "surname_observed": 0.8953488372093024,
+              "surname_sensitivity_surprisal_midpoint": 13.876248234411651
+            },
+            "numeric_medians": {
+              "combine_year": 2007.0,
+              "given_generation_ssa_ever_observed": 1.0,
+              "given_generation_surprisal": 11.443206960769173,
+              "initials": 0.0,
+              "surname_observed": 1.0,
+              "surname_sensitivity_surprisal_midpoint": 12.903509164396098
+            },
+            "numeric_scales": {
+              "combine_year": 5.171276636028576,
+              "given_generation_ssa_ever_observed": 0.30929478706587094,
+              "given_generation_surprisal": 4.070735889879047,
+              "initials": 0.12462623892810906,
+              "surname_observed": 0.30610340886251586,
+              "surname_sensitivity_surprisal_midpoint": 4.467125074752087
+            },
+            "output_feature_count": 10,
+            "zero_variance_dropped": []
+          },
+          "selected_C": 0.001,
+          "selection_rule": "minimum_validation_log_loss_tie_smaller_C"
+        }
+      },
+      "split_row_counts": {
+        "test": 326,
+        "train": 1204,
+        "validation": 265
+      }
+    }
+  },
+  "software_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.2",
+    "python": "3.11.4",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.16.1"
+  },
+  "spec_sha256": "47901ebddcb8978d842748a94961410238cb0332689713737d491492d0cef9c1",
+  "splits_used": [
+    "train",
+    "validation"
+  ],
+  "status": "validation_complete_test_locked"
+}
